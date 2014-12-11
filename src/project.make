@@ -51,3 +51,4 @@ projects[adminimal_admin_menu][version] = 1.5
 
 projects[adminimal_theme][version] = 1.18
 projects[bootstrap][version] = 3.0
+projects[radix][version] = 3.0-rc1
