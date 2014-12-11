@@ -1,0 +1,24 @@
+name = Little Blue Labs
+description = Labs which are small and sky-colored.
+core = 7.x
+
+; Panopoly
+dependencies[] = panopoly_core
+dependencies[] = panopoly_images
+dependencies[] = panopoly_theme
+dependencies[] = panopoly_magic
+dependencies[] = panopoly_widgets
+dependencies[] = panopoly_admin
+dependencies[] = panopoly_users
+dependencies[] = panopoly_pages
+dependencies[] = panopoly_search
+dependencies[] = panopoly_wysiwyg
+
+; Other
+dependencies[] = admin_menu
+dependencies[] = adminimal_admin_menu
+dependencies[] = backports
+dependencies[] = save_draft
+dependencies[] = module_filter
+dependencies[] = date_popup_authored
+dependencies[] = devel
