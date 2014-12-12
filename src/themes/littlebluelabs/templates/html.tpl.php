@@ -5,6 +5,7 @@
     <?php print $head; ?>
     <title><?php print $head_title; ?></title>
     <?php print $styles; ?>
+    <link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
     <?php print $scripts; ?>
   </head>
   <body class="<?php print $classes; ?>" <?php print $attributes;?>>

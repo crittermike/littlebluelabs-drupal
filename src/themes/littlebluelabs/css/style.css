@@ -1,23 +1,24 @@
 /**************************
  *        GLOBALS         *
  **************************/
-
+body {
+  background: #7DB4B5;
+  font-family: 'Bree Serif', Georgia, serif;
+  color: #E0EFF1;
+  text-align: center;
+}
 
 /**************************
  *         HEADER         *
  **************************/
-
+h1#logo {
+  color: #E0EFF1;
+  font-size: 100px;
+  font-weight: normal;
+}
 
 /**************************
  *       NAVIGATION       *
- **************************/
-.admin-menu #overlay-container {
-  margin-top: 20px; /* Fix for using admin_menu with the overlay. */
-}
-
-
-/**************************
- *        SIDEBARS        *
  **************************/
 
 
