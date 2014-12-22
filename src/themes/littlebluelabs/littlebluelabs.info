@@ -20,6 +20,7 @@ features[] = main_menu
 stylesheets[all][] = css/bootstrap.min.css
 stylesheets[all][] = css/agency.css
 stylesheets[all][] = font-awesome/css/font-awesome.min.css
+stylesheets[all][] = css/style.css
 
 scripts[] = js/bootstrap.min.js
 scripts[] = js/jquery.easing.min.js

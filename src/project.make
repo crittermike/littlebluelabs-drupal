@@ -44,7 +44,7 @@ projects[panopoly_search][subdir] = panopoly
 
 ; Contrib Modules
 
-projects[admin_menu][version] = 3.0-rc4
+projects[admin_menu][version] = 3.0-rc5
 projects[adminimal_admin_menu][version] = 1.5
 projects[webform][version] = 4.2
 
