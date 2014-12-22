@@ -9,7 +9,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand page-scroll" href="#page-top">Little <span>Blue</span> Labs</a>
+      <a class="navbar-brand page-scroll" href="#page-top">little<span>blue</span>labs</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -46,8 +46,8 @@
     <div class="container">
       <div class="intro-text">
         <?php print render($title_prefix); ?>
-        <div class="intro-lead-in">Welcome To Our Studio!</div>
-        <div class="intro-heading">It's Nice To Meet You</div>
+        <div class="intro-lead-in">High-end Drupal by <a href="http://drupal.org/u/mcrittenden">Mike Crittenden</a> and friends</div>
+        <div class="intro-heading">Welcome To The Lab</div>
         <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
         <?php print render($title_suffix); ?>
       </div>

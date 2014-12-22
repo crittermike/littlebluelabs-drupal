@@ -13,3 +13,10 @@ function littlebluelabs_install_tasks_alter(&$tasks, $install_state) {
   require_once $path . '/panopoly_core.profile.inc';
   $tasks['install_load_profile']['function'] = 'panopoly_core_install_load_profile';
 }
+
+/**
+ * Implements hook_css_alter().
+ */
+function littlebluelabs_css_alter(&$css) {
+  unset($css[drupal_get_path('module','system').'/system.messages.css']);
+}
