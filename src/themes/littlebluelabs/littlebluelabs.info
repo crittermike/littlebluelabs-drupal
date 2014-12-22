@@ -1,5 +1,5 @@
 name = Little Blue Labs
-description = SMALL AQUA COLORED LABS
+description = Just a little blue science thingie
 screenshot = images/screenshot.png
 core = "7.x"
 engine = phptemplate
@@ -17,4 +17,15 @@ features[] = slogan
 features[] = favicon
 features[] = main_menu
 
-stylesheets[all][] = css/style.css
+stylesheets[all][] = css/bootstrap.min.css
+stylesheets[all][] = css/agency.css
+stylesheets[all][] = font-awesome/css/font-awesome.min.css
+
+scripts[] = js/bootstrap.min.js
+scripts[] = js/jquery.easing.min.js
+scripts[] = js/classie.js
+scripts[] = js/cbpAnimatedHeader.js
+scripts[] = js/jqBootstrapValidation.js
+scripts[] = js/contact_me.js
+scripts[] = js/agency.js
+
