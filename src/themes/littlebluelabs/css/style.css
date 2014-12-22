@@ -2,19 +2,77 @@
  *        GLOBALS         *
  **************************/
 body {
-  background: #7DB4B5;
+  background: #2bb3dd;
   font-family: 'Bree Serif', Georgia, serif;
-  color: #E0EFF1;
-  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+body, html, #header {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input.form-text,
+textarea {
+  background: #585f73;
+  color: #93959c;
+  padding: 15px 20px;
+  border: none;
+  margin-right: 3%;
+  margin-bottom: 30px;
+  outline: none;
+  font-size: 13px;
 }
 
 /**************************
  *         HEADER         *
  **************************/
+#header {
+  background: transparent url(../images/background.jpg) no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+}
+#header-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  background-size: cover;
+  height: 100%;
+}
+#header-inner {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 1px solid white;
+  padding: 20px;
+  width: 70%;
+  margin: 0 auto;
+}
 h1#logo {
-  color: #E0EFF1;
   font-size: 100px;
   font-weight: normal;
+  text-align: center;
+  margin: 0;
+  color: #aaa;
+}
+
+h1#logo span {
+  color: white;
+}
+
+h2#slogan {
+  font-size: 30px;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 0;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+}
+
+h2#slogan a {
+  color: white;
 }
 
 @media only screen and (max-width : 767px) {
@@ -31,8 +89,89 @@ h1#logo {
 /**************************
  *         CONTENT        *
  **************************/
+#content {
+  background: url(../images/dottedline.png) repeat;
+  padding: 4px 0 0;
+}
+#content-inner {
+  background: url(../images/dottedline.png) repeat left bottom;
+  padding-bottom: 4px;
+}
+.moscone {
+  background: #474d5d;
+}
 
+.panel-pane {
+  padding: 20px;
+}
+
+.node-webform h2 a {
+  display: none;
+}
+
+.node-webform label {
+  display: none;
+}
+
+.webform-component--name,
+.webform-component--email-phone {
+  float: left;
+  width: 50%;
+}
+
+.node-webform input.form-submit {
+  background: #ff675f;
+  color: #fff;
+  font-size: 13px;
+  font-weight: normal;
+  text-align: center;
+  float: right;
+  margin: 0px;
+  padding: 15px 30px;
+  border: none;
+  outline: none;
+}
+
+.contact-details {
+  color: #93959c;
+  font-size: 15px;
+  line-height: 19px;
+  padding-bottom: 14px;
+}
+.contact-details a {
+  color: #93959c;
+}
 
 /**************************
  *         FOOTER         *
  **************************/
+#footer {
+  padding: 35px;
+}
+#footer ul.social-icons {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+#footer ul.social-icons li {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+#footer ul.social-icons li a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.icon-linkedin a { background: url(../images/linkedin.png) no-repeat center center; }
+.icon-twitter a { background: url(../images/twitter.png) no-repeat center center; }
+.icon-github a { background: url(../images/github.png) no-repeat center center; }
+.icon-drupal a { background: url(../images/drupal.png) no-repeat center center; }
