@@ -43,7 +43,6 @@ function lbl_contact_ajax_submit() {
     ),
   );
   $system = drupal_mail_system($module, $mail_token);
-  $message = $system->format($message);
 
   if ($system->mail($message)) {
     return TRUE;
