@@ -13,3 +13,7 @@
   border-color: #2bb3dd;
   background-color: #2bb3dd;
 }
+
+.boxton > .container-fluid {
+  padding: 0;
+}
