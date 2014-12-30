@@ -1,3 +1,22 @@
+<?php if (!$is_front): ?>
+  <?php print render($title_prefix); ?>
+  <?php if ($title): ?>
+    <h1><?php print $title; ?></h1>
+  <?php endif; ?>
+  <?php print render($title_suffix); ?>
+
+  <?php print $messages; ?>
+  <?php print render($page['help']); ?>
+
+  <?php if ($tabs): ?>
+    <?php print render($tabs); ?>
+  <?php endif; ?>
+
+  <?php if ($action_links): ?>
+    <ul><?php print render($action_links); ?></ul>
+  <?php endif; ?>
+<?php endif; ?>
+
 <?php print render($page['content']) ?>
 
 <footer>
