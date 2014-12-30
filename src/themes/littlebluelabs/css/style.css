@@ -18,6 +18,10 @@
   padding: 0;
 }
 
+.boxton {
+  overflow: hidden;
+}
+
 .clients img {
   height: 50px;
   width: auto;
