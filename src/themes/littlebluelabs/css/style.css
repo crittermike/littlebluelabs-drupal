@@ -17,3 +17,22 @@
 .boxton > .container-fluid {
   padding: 0;
 }
+
+header {
+  background-attachment: fixed;
+}
+
+.clients img {
+  height: 50px;
+  width: auto;
+  filter: grayscale(100%);
+  filter: url(#greyscale);
+  filter: gray;
+  -webkit-filter: grayscale(1);
+}
+
+/*
+img.desaturate {
+
+}
+*/

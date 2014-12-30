@@ -1,0 +1,55 @@
+<?php
+
+/**
+ * Implements hook_menu().
+ */
+function lbl_contact_menu() {
+  $items = array();
+  $items['ajax/contact'] = array(
+    'title' => 'LBL Contact Form Submission',
+    'page callback' => 'lbl_contact_ajax_submit',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  );
+  return $items;
+}
+
+/**
+ *
+ */
+function lbl_contact_ajax_submit() {
+  // Check for empty fields
+  if (empty($_POST['email']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+    drupal_access_denied();
+    drupal_exit();
+  }
+
+  $name = $_POST['name'];
+  $email_address = $_POST['email'];
+  $phone = $_POST['phone'];
+  $message = $_POST['message'];
+  $email_body = "Name: $name\n\nEmail: $email_address\n\nPhone: $phone\n\nMessage:\n$message";
+
+  $module = 'lbl_contact';
+  $mail_token = 'submit';
+  $message = array(
+    'id' => $module . '_' . $mail_token,
+    'to' => 'hello@littlebluelabs.com',
+    'subject' => 'LBL: Contact Form Submission',
+    'body' => $email_body,
+    'headers' => array(
+      'From' => 'noreply@littlebluelabs.com',
+      'Reply-To' => $email_address
+    ),
+  );
+  $system = drupal_mail_system($module, $mail_token);
+  $message = $system->format($message);
+
+  if ($system->mail($message)) {
+    return TRUE;
+  }
+  else {
+    drupal_access_denied();
+  }
+  drupal_exit();
+}

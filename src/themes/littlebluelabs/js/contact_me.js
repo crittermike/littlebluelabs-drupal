@@ -7,6 +7,7 @@
         // additional error messages or events
       },
       submitSuccess: function ($form, event) {
+        debugger;
         event.preventDefault(); // prevent default submit behaviour
         // get values from FORM
         var name = $("input#name").val();
@@ -19,7 +20,7 @@
           firstName = name.split(' ').slice(0, -1).join(' ');
         }
         $.ajax({
-          url: "././mail/contact_me.php",
+          url: "/ajax/contact",
           type: "POST",
           data: {
             name: name,

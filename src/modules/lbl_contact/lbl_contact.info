@@ -1,0 +1,4 @@
+name = LBL Contact
+package: Little Blue Labs
+description = Handles the Contact Us form on the homepage
+core = 7.x

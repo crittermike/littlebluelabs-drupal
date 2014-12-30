@@ -47,6 +47,7 @@ projects[panopoly_search][subdir] = panopoly
 projects[admin_menu][version] = 3.0-rc5
 projects[adminimal_admin_menu][version] = 1.5
 projects[webform][version] = 4.2
+projects[jquery_update][version] = 2.4
 
 ; Contrib Themes
 
